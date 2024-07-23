@@ -1,5 +1,5 @@
 
 
 export function Button(){
-    return <button>Hello</button>
+    return <button>Click me</button>
 }
