@@ -1,0 +1,71 @@
+.profile{
+    width: 16rem; /* 259px */
+    height:fit-content;
+    margin: 20px;
+    background: var(--gray-800) url(../assets/cover-pic.png) no-repeat top center/ 256px 72px;
+    border-radius: 8px;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding: 20px;
+    margin-top: 25px;
+    border-bottom: 1px solid var(--gray-600);
+}
+
+.profile_pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+    margin-bottom: 24px;
+    background: var(--gray-800);
+    border: 2px solid var(--green-300);
+    border-radius: 8px;
+}
+
+.profile_pic img {
+    width: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+
+.job_title{
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.edit_profile{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 24px 0 30px 0;
+}
+
+.edit_button{
+    text-decoration: none;
+    color: var(--green-300);
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: 193px;
+    padding: 16px 24px 14px 24px;
+    border: 1px solid var(--green-300);
+    border-radius: 8px;
+}
+
+.edit_icon{
+    font-size: 20px;
+}

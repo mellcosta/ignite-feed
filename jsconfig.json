@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src", // Diretório base para caminhos relativos (normalmente "src")
+    "paths": {
+      "@components/*": ["components/*"], // Alias para a pasta de componentes
+      "@styles/*": ["styles/*"], // Alias para a pasta de estilos
+      "@assets/*": ["assets/*"] // Alias para a pasta de assets
+    }
+  },
+  "include": ["src"] // Inclui a pasta `src` no projeto
+}
