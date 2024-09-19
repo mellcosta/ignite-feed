@@ -1,22 +1,22 @@
-import { Header } from "./components/Header"
-import { Profile } from "./components/Profile"
-import { Post } from "./components/Post"
+import { Header } from "./components/Header";
+import { Sidebar } from "./components/Sidebar";
+import { Post } from "./components/Post";
 
-import './global.css'
-import styles from './App.module.css'
+import "./global.css";
+import styles from "./App.module.css";
 
-function App(){
+function App() {
   return (
     <>
-      <Header/>
+      <Header />
       <main className={styles.container}>
-      <Profile/>
-      <div>
-        <Post />
-      </div>
+        <Sidebar />
+        <div>
+          <Post />
+        </div>
       </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
