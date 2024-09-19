@@ -1,6 +1,6 @@
 import styles from "./Post.module.css";
 
-import { Profile_Pic } from "./Profile_Pic";
+import { Avatar } from "./Avatar.module.css";
 
 export function Post() {
   return (
@@ -8,7 +8,7 @@ export function Post() {
       <div className={styles.post}>
         <div className={styles.header}>
           <div className={styles.author}>
-            <Profile_Pic src="" />
+            <Avatar src="" />
             <span>
               <strong>Jane Cooper</strong>
               <p>Dev frontend</p>
@@ -22,8 +22,9 @@ export function Post() {
           Fala galeraa 👋
           <br />
           <br />
-          Acabei de subir mais um projeto no meu portifa. É um projeto que fiz
-          no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀
+          Acabei de subir mais um projeto no meu portifólio. É um projeto que
+          fiz no NLW Return, evento da Rocketseat. O nome do projeto é
+          DoctorCare 🚀
           <br />
           <br />
           <a href="#">👉 jane.design/doctorcare</a>

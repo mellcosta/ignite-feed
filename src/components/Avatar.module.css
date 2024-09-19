@@ -1,4 +1,4 @@
-.profile_pic {
+.avatar {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,7 +10,7 @@
   border-radius: 8px;
 }
 
-.profile_pic img {
+.avatar img {
   width: 50px;
   object-fit: cover;
   border-radius: 5px;
