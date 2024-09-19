@@ -1,7 +1,6 @@
+import { Avatar } from "./Avatar";
 import styles from "./Profile.module.css";
 import { PencilSimpleLine } from "@phosphor-icons/react";
-
-import { Avatar } from "./Avatar.module.css";
 
 export function Profile() {
   return (

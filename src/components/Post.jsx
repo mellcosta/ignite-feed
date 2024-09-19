@@ -1,6 +1,5 @@
+import { Avatar } from "./Avatar";
 import styles from "./Post.module.css";
-
-import { Avatar } from "./Avatar.module.css";
 
 export function Post() {
   return (
