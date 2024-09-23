@@ -29,13 +29,13 @@
   line-height: 1.6;
 }
 
-footer {
+.sidebar footer {
   border-top: 1px solid var(--gray-600);
   margin-top: 1.5rem;
   padding: 1.5rem 2rem 2rem;
 }
 
-footer .edit_button {
+.sidebar footer .edit_button {
   width: 100%;
   text-decoration: none;
   color: var(--green-500);

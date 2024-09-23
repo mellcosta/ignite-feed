@@ -1,0 +1,24 @@
+.comment {
+  display: flex;
+}
+.comment section {
+  width: 100%;
+  margin-left: 1rem;
+}
+
+.comment .commentContent {
+  padding: 1rem 1.5rem 2.5rem 1rem;
+  border-radius: 9px;
+  background: var(--gray-700);
+}
+
+.commentContent header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment .likes {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}

@@ -12,7 +12,7 @@ export function Sidebar() {
           alt="cover"
         />
         <div className={styles.profile}>
-          <Avatar className={styles.avatar} />
+          <Avatar hasBorder src="./leslie-pic.png" />
 
           <strong>Leslie Alexander</strong>
           <span>UI Designer</span>

@@ -1,4 +1,4 @@
-.avatar {
+.avatarWithBorder {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,6 +10,7 @@
   border-radius: 8px;
 }
 
+.avatarWithBorder img,
 .avatar img {
   width: 50px;
   object-fit: cover;

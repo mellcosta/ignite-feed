@@ -27,7 +27,6 @@
 }
 
 .content {
-  border-bottom: 1px solid var(--gray-600);
   padding: 1rem 0;
 }
 
@@ -41,7 +40,10 @@
   flex-direction: column;
   gap: 20px;
   justify-content: center;
+
   margin-top: 1rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--gray-600);
 }
 
 .form #textarea {
