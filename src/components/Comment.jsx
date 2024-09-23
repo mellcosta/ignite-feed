@@ -17,7 +17,7 @@ export function Comment() {
               <Trash size={24} />
             </a>
           </header>
-          <span>Muito bom Devon, Parabéns!</span>
+          <div>Muito bom Devon, Parabéns!</div>
         </div>
 
         <footer className={styles.likes}>
