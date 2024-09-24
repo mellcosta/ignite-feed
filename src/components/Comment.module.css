@@ -1,36 +1,78 @@
 .comment {
   display: flex;
-  font-size: 0.875rem;
-  line-height: 1.6;
   gap: 1rem;
 }
-.comment section {
-  width: 100%;
+.commentBox {
+  flex: 1;
 }
 
-.comment .commentContent {
+.commentContent {
   padding: 1rem;
-  border-radius: 9px;
+  border-radius: 8px;
   background: var(--gray-700);
 }
 
 .commentContent header {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
-.commentContent header p {
+.authorAndTime {
+  display: flex;
+  flex-direction: column;
+}
+
+.authorAndTime strong {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.authorAndTime time {
+  display: block;
   font-size: 0.75rem;
+  line-height: 1.6;
   color: var(--gray-400);
 }
 
-.commentContent > div {
+.commentContent header button {
+  background: transparent;
+  border: 0;
+  color: var(--gray-400);
+  cursor: pointer;
+  line-height: 0;
+}
+
+.commentContent header button:hover {
+  color: var(--red-danger);
+}
+
+.commentContent p {
+  margin-top: 1rem;
+  color: var(--gray-300);
+}
+
+.comment footer {
   margin-top: 1rem;
 }
 
-.comment .likes {
+.comment footer button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  color: var(--gray-400);
+
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
+  justify-content: center;
+}
+
+.comment footer button:hover {
+  color: var(--gray-300);
+}
+
+.comment footer button span::before {
+  content: "\2022";
+  padding: 0 0.5rem;
 }

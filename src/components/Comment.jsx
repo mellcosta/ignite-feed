@@ -1,28 +1,49 @@
+/* eslint-disable react/prop-types */
 import { ThumbsUp, Trash } from "@phosphor-icons/react";
 import { Avatar } from "./Avatar";
 import styles from "./Comment.module.css";
+import { useState } from "react";
 
-export function Comment() {
+export function Comment(props) {
+  const [likeCount, setLikeCount] = useState(0);
+
+  function handleDelete() {
+    props.onDeleteComment(props.content);
+  }
+
+  function handleLikeComment() {
+    setLikeCount((state) => state + 1);
+    //setLikeCount(likeCount + 1)
+  }
+
   return (
     <div className={styles.comment}>
       <Avatar hasborder={false} src="./leslie-pic.png" />
-      <section>
+      <section className={styles.commentBox}>
         <div className={styles.commentContent}>
           <header>
-            <div>
+            <div className={styles.authorAndTime}>
               <strong>Devon Lane</strong>
-              <p className="time">Cerca de 2h</p>
+              <time
+                title="22 September of 2022, 15h30"
+                dateTime="2022-06-06 15:33:00"
+              >
+                Cerca de 2h
+              </time>
             </div>
-            <a>
+            <button onClick={handleDelete} title="Delete Comment">
               <Trash size={24} />
-            </a>
+            </button>
           </header>
-          <div>Muito bom Devon, Parabéns!</div>
+
+          <p>{props.content}</p>
         </div>
 
-        <footer className={styles.likes}>
-          <ThumbsUp size={20} />
-          Aplaudir . 33
+        <footer>
+          <button onClick={handleLikeComment}>
+            <ThumbsUp size={20} style={{ marginRight: "0.5rem" }} />
+            Aplaudir <span> {likeCount} </span>
+          </button>
         </footer>
       </section>
     </div>
