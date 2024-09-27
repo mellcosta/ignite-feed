@@ -2,75 +2,116 @@
   background: var(--gray-800);
   max-width: 830px;
   height: fit-content;
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: 8px;
 }
 
-.header {
+.post > header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 14px;
 }
-.header p {
+.post > header time {
+  font-size: 0.875rem;
   color: var(--gray-400);
 }
 
 .author {
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
 .author strong {
-  line-height: 2rem;
+  display: block;
+  line-height: 1.6rem;
   font-size: 16px;
+}
+.authorInfo span {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--gray-400);
+  line-height: 1.6;
 }
 
 .content {
-  padding: 1rem 0;
+  line-height: 1.6;
+  color: var(--gray-300);
+  margin-top: 1.5rem;
+}
+.content p {
+  margin-top: 1rem;
 }
 
 .content a {
+  font-weight: bold;
   color: var(--green-500);
   text-decoration: none;
 }
+.content a:hover {
+  color: var(--green-300);
+}
 
-.form {
-  display: flex;
+.commentForm {
+  /* display: flex;
   flex-direction: column;
   gap: 20px;
-  justify-content: center;
-
-  margin-top: 1rem;
-  padding: 1.5rem 0;
+  justify-content: center; */
+  width: 100%;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
   border-top: 1px solid var(--gray-600);
 }
-
-.form #textarea {
-  background-color: var(--gray-900);
-  color: var(--gray-500);
-
-  min-height: 96px;
-  border-radius: 8px;
-  border: none;
-  padding: 10px;
-  resize: none;
-  outline: none;
+.commentForm > strong {
+  line-height: 1.6;
+  color: var(--gray-100);
 }
 
-.form #textarea:focus-within {
+.commentForm textarea {
+  width: 100%;
+  background-color: var(--gray-900);
+  color: var(--gray-100);
+  line-height: 1.4;
+  height: 6rem;
+
+  border-radius: 8px;
+  border: 0;
+  resize: none;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.commentForm textarea:focus-within {
+  outline: none;
   border: 2px solid var(--green-500);
 }
 
-.form button {
-  width: fit-content;
-  padding: 16px 24px 14px 24px;
+.commentForm button[type="submit"] {
+  padding: 1rem 1.5rem;
+  margin-top: 1rem;
   border-radius: 8px;
-  border: none;
-  background-color: var(--green-500);
-  color: var(--white);
+  border: 0;
+  background: var(--green-500);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.1s;
 }
 
-.form button:hover {
+.commentForm button[type="submit"]:not(:disabled):hover {
   background: var(--green-300);
+}
+.commentForm button[type="submit"]:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.commentForm footer {
+  visibility: hidden;
+  max-height: 0;
+}
+
+.commentForm:focus-within footer {
+  visibility: visible;
+  max-height: none;
 }

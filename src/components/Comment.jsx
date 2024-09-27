@@ -18,12 +18,12 @@ export function Comment(props) {
 
   return (
     <div className={styles.comment}>
-      <Avatar hasborder={false} src="./leslie-pic.png" />
+      <Avatar hasborder={false} src="./melissa-costa.jpeg" />
       <section className={styles.commentBox}>
         <div className={styles.commentContent}>
           <header>
             <div className={styles.authorAndTime}>
-              <strong>Devon Lane</strong>
+              <strong>Melissa Costa</strong>
               <time
                 title="22 September of 2022, 15h30"
                 dateTime="2022-06-06 15:33:00"
