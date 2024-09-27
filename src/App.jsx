@@ -10,7 +10,7 @@ const posts = [
     id: 1,
     author: {
       avatarUrl: "./leslie-pic.png",
-      name: "Melissa Costa",
+      name: "Leslie Alexander",
       role: "UI Designer",
     },
 
