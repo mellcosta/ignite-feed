@@ -20,7 +20,7 @@ export function Sidebar() {
 
         <footer>
           <a href="#" className={styles.edit_button}>
-            <PencilSimpleLine size={20} />
+            <PencilSimpleLine style={{ marginRight: "0.5rem" }} size={20} />
             Editar seu perfil
           </a>
         </footer>
