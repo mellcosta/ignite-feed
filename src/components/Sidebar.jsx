@@ -6,11 +6,7 @@ export function Sidebar() {
   return (
     <>
       <aside className={styles.sidebar}>
-        <img
-          className={styles.cover}
-          src="../../public/cover-pic.png"
-          alt="cover"
-        />
+        <img className={styles.cover} src="./cover-pic.png" alt="cover" />
         <div className={styles.profile}>
           <Avatar hasBorder src="./leslie-pic.png" />
 
