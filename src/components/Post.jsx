@@ -4,21 +4,21 @@ import { Avatar } from "./Avatar";
 import { Comment } from "./Comment";
 import styles from "./Post.module.css";
 import { format, formatDistanceToNow } from "date-fns";
-import { pt } from "date-fns/locale";
+import { enUS } from "date-fns/locale";
 
 export function Post({ author, publishedAt, content }) {
-  const [comments, setComments] = useState(["Post muito bacana!"]);
+  const [comments, setComments] = useState(["Awesome Post!"]);
   const [newComment, setNewComment] = useState("");
   const isNewCommentEmpty = newComment.length === 0;
 
   const publishedDateFormatted = format(
     publishedAt,
-    "d 'de' LLLL 'às' HH:mm'h' ",
-    { locale: pt },
+    "d 'of' LLLL 'at' HH:mm'h' ",
+    { locale: enUS },
   );
 
   const publishedDateRelativeToNow = formatDistanceToNow(publishedAt, {
-    locale: pt,
+    locale: enUS,
     addSuffix: true,
   });
 
@@ -80,10 +80,10 @@ export function Post({ author, publishedAt, content }) {
       </div>
 
       <form className={styles.commentForm} onSubmit={handleCreateNewComment}>
-        <strong>Deixe seu feedback</strong>
+        <strong>Give your feedback</strong>
 
         <textarea
-          placeholder="Deixe um comentário..."
+          placeholder="Leave your comment..."
           name="comment"
           onChange={handleNewCommentChange}
           required
@@ -92,7 +92,7 @@ export function Post({ author, publishedAt, content }) {
         />
         <footer>
           <button disabled={isNewCommentEmpty} type="submit">
-            Publicar
+            Post
           </button>
         </footer>
       </form>

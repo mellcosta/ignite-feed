@@ -28,7 +28,7 @@ export function Comment(props) {
                 title="22 September of 2022, 15h30"
                 dateTime="2022-06-06 15:33:00"
               >
-                Cerca de 2h
+                2h Ago
               </time>
             </div>
             <button onClick={handleDelete} title="Delete Comment">
@@ -42,7 +42,7 @@ export function Comment(props) {
         <footer>
           <button onClick={handleLikeComment}>
             <ThumbsUp size={20} style={{ marginRight: "0.5rem" }} />
-            Aplaudir <span> {likeCount} </span>
+            Like <span> {likeCount} </span>
           </button>
         </footer>
       </section>

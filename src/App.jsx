@@ -15,11 +15,11 @@ const posts = [
     },
 
     content: [
-      { type: "paragraph", content: "Fala galeraa 👋" },
+      { type: "paragraph", content: "Hey everyone 👋" },
       {
         type: "paragraph",
         content:
-          "Acabei de subir mais um projeto no meu portifólio. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀",
+          "I just uploaded a new project to my portfolio. It's a project I worked on during the NLW Return event by Rocketseat. The project's name is DoctorCare 🚀.",
       },
       { type: "link", content: "jane.design/doctorcare" },
     ],

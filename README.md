@@ -1,32 +1,33 @@
 # Ignite Feed
 
-<img src="./public/wallpaper.png" alt="wallpaper do projeto ignite feed" />
+<img src="./public/wallpaper.png" alt="Ignite feed Wallpaper" />
 
-Ignite feed é um projeto simples que simula o feed das redes sociais,<br> com funcionalidades de comentários, likes e apagar comentários.
+Ignite feed  is a simlpe project which simulates your social media feed,<br> with features like comment, likes and delete comments.
 
-## Funcionalidades
+## Features
 
-<ul>
-  ✅ - adicionar comentários<br>
-  ✅ - aplaudir (likes)<br>
-  ✅ - apagar comentário<br>
-</ul>
+  ✅ - add comments
 
-## Como usar
+  ✅ - clap (likes)
 
-1. Clonar repositório
+  ✅ - delete comment
+
+
+## How to use?
+
+1. Clone the repository
    `git clone https://github.com/mellcosta/ignite-feed.git `
 
-2. Instalar dependências
-   `yarn` ou `npm i`
+2. Install dependencies
+   `yarn` or `npm i`
 
-3. Subir projeto Local
-   `yarn dev` ou `npm run dev`
+3. Run the local project
+   `yarn dev` or `npm run dev`
 
-4. Acessar projeto
+4. Click the link 
    `http://localhost:3000/`
 
-## Tecnologias utilizadas
+## Technologies
 
 <ul>
   <li>ReactJS</li><br>
@@ -36,6 +37,4 @@ Ignite feed é um projeto simples que simula o feed das redes sociais,<br> com f
   <li>Phosphor-react</li><br>
 </ul>
 
-## Considerações finais
-
-### Desenvolvido por `Melissa Costa - @mellcosta`
+### Developed by `Melissa Costa - @mellcosta`
